@@ -1,0 +1,129 @@
+html,body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+}
+
+body {
+    font-family: Quicksand;
+}
+
+header {
+    width: 100%;
+    height: 70px;
+    background-color: black;
+}
+
+.logo {
+    position: fixed;
+    float: left;
+    margin: 20px 36px;
+    color: darkturquoise;
+    font-weight: bold;
+    font-size: 24px;
+}
+
+nav {
+    position: fixed;
+    width: 100%;
+}
+
+nav ul {
+    list-style: none;
+    background: rgba(0,0,0,0);
+    overflow: hidden;
+    color: #fff;
+    padding: 0;
+    text-align: center;
+    margin: 0;
+    transition: 1s;
+}
+
+nav.black ul {
+    background: #000;
+    height: 63px;
+}
+
+nav .menu ul li{
+    display: inline;
+}
+
+nav .menu ul li a {
+    text-decoration: none;
+    color: #fff;
+    font-size: 20px;
+    line-height: 3.5em;
+    padding: 8px;
+}
+
+.menu ul li a:hover {
+    background-color: #ddd;
+    color: black;
+}
+
+.menu-icon{
+    width: 100%;
+    background: #000;
+    text-align: right;
+    box-sizing: border-box;
+    padding: 15px 24px;
+    cursor: pointer;
+    color: #fff;
+    display: none;
+}
+
+.search input[type=text] {
+    height: 30px;
+    display: inline-block;
+    float: right;
+    border: none;
+    margin-top: -3.3%;
+    margin-right: 2%;
+    font-size: 17px;
+    overflow: hidden;
+}
+
+@media(max-width: 600px) {
+    .logo {
+        position: fixed;
+        top: 0;
+        margin-top: 16px;
+    }
+
+    nav ul {
+        max-height: 10px;
+        background: #000;
+    }
+
+    nav.black ul {
+        background: #000;
+    }
+
+    .showing {
+        max-height: 20em;
+    }
+
+    nav ul li {
+        box-sizing: border-box;
+        width: 100%;
+        padding: 24px 0;
+        text-align: center;
+    }
+    nav .menu ul li a {
+        line-height: 2em;
+        display:grid;
+    }
+    .menu-icon {
+        display: block;
+    }
+     input[type=text] {
+        visibility: hidden;
+    }
+     nav .black{
+        height: 60px;
+     }
+}
+
+
+
+
